@@ -1,3 +1,5 @@
 #!/bin/sh
-echo "I run!"
-pwd
+echo "===Testing formatting==="
+cd test-project
+mvn spotless:check
+
