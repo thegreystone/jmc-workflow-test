@@ -4,21 +4,21 @@ on: [push, pull_request]
 
 jobs:
   linux:
-    uses: actions/checkout@v1
+    - uses: actions/checkout@v1
     runs-on: 'ubuntu-latest'
     steps:
     - name: Spotless checks
       run: ./scripts/formatting.sh
 
   mac:
-    uses: actions/checkout@v1
+    - uses: actions/checkout@v1
     runs-on: 'macOS-latest'
     steps:
     - name: Spotless checks
       run: ./scripts/formatting.sh
 
   win:
-    uses: actions/checkout@v1
+    - uses: actions/checkout@v1
     runs-on: 'windows-latest'
     steps:
     - name: Spotless checks
