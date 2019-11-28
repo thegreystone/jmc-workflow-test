@@ -6,23 +6,18 @@ jobs:
   linux:
     runs-on: 'ubuntu-latest'
     steps:
-    - uses: actions/checkout@v1
-    - name: Build and test
+    - name: Spotless checks
       run: ./scripts/formatting.sh
 
   mac:
     runs-on: 'macOS-latest'
     steps:
-    - uses: actions/checkout@v1
-    - name: Install Maven
-      run: brew install maven
-    - name: Build and test
+    - name: Spotless checks
       run: ./scripts/formatting.sh
 
   win:
     runs-on: 'windows-latest'
     steps:
-    - uses: actions/checkout@v1
-    - name: Build and test
+    - name: Spotless checks
       run: ./scripts/formatting.bat
       shell: cmd
