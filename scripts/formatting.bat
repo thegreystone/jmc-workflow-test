@@ -1,1 +1,3 @@
-echo "I ran on windows!"
+echo "===Running Formatting tests==="
+cd test-project
+mvn spotless:check
