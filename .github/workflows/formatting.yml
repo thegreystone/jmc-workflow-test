@@ -14,8 +14,8 @@ jobs:
     runs-on: 'macOS-latest'
     steps:
     - uses: actions/checkout@v1
-    - name: Install Mercurial
-      run: brew install mercurial
+    - name: Install Maven
+      run: brew install maven
     - name: Build and test
       run: ./scripts/formatting.sh
 
